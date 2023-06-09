@@ -4,8 +4,7 @@ function acc1() {
   var telefono = document.getElementById("phone").value;
   var mail = document.getElementById("email").value;
   var mod = document.getElementById("model").value;
-  var efectivo= parseInt(document.getElementById("ef").value);
-  var seg = document.getElementById("seguro").value;
+  var seg;
 
 
   var precio
@@ -13,21 +12,28 @@ function acc1() {
 
     document.getElementById("age").value= "";
     alert("La edad debe ser un numero");
+    return;
   } 
   if (isNaN(telefono)) {
     document.getElementById("phone").value= "";
     alert("El telefono debe ser un numero");
+    return;
   }
   
-  if (efectivo === 1) {
+  if (document.getElementById("ef").checked) {
     precio = 100000 * 0.95;
   } else {
     precio = 100000;
   }
-  if (seguro === "Si") {
+  if (document.getElementById("seguro").checked) {
+    seg="Tiene";
   } else {
-    seg="No";
+    seg="No Tiene";
   }
+if (nom==""||edad==""||telefono==""||mail==""||mod=="") {
+  alert("Debe ingresar todos los datos");
+  return;
+}
 
   document.getElementById("resultado").innerHTML="Recibo:<br>"+"<br>Nombre:"+ nom + "<br>Telefono:" + telefono+ "<br>Email: "+mail+"<br>Codigo Modelo:"+mod + "<br>Precio: $"+precio +"<br>Seguro: "+ seg;
 
@@ -51,7 +57,8 @@ function limpiar() {
       document.getElementById("phone").value= "";
       document.getElementById("email").value= "";
       document.getElementById("model").value= "";
-
+      document.getElementById("ef").checked=false;
+      document.getElementById("seguro").checked=false
 
 
       document.getElementById("resultado").innerText= " ";

@@ -30,12 +30,32 @@ body{
   background-color: darkorange;
 }
 
-#contenido{
+#contenido1 p{
   background-color: cadetblue;
   border-color: beige;
   border-style: solid;
   border-width: 1px;
   margin: 3px;
-  
+  padding: 10px;  
+  block-size: auto;
+  align-content: normal;
+}
+#contenido1 img{
+  float: left;
+
 }
 
+#contenido2 p{
+  background-color: cadetblue;
+  border-color: beige;
+  border-style: solid;
+  border-width: 1px;
+  margin: 3px;
+  padding: 10px;  
+  block-size: auto;
+  align-content: normal;
+
+}
+#contenido2 img{
+  float: right;
+}
