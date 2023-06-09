@@ -19,7 +19,7 @@ function acc1() {
     alert("El telefono debe ser un numero");
   }
   
-  if (efectivo === '1') {
+  if (efectivo === 1) {
     precio = 100000 * 0.95;
   } else {
     precio = 100000;
