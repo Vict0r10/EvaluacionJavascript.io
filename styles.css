@@ -42,7 +42,7 @@ body{
 }
 #contenido1 img{
   float: left;
-
+  margin: 3px;
 }
 
 #contenido2 p{
@@ -58,4 +58,5 @@ body{
 }
 #contenido2 img{
   float: right;
+  margin: 3px;
 }
