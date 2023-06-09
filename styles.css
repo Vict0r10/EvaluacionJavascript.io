@@ -1,6 +1,7 @@
 header {
   font-family: "Courier New", Courier, monospace;
   color: rgb(199, 105, 39);
+  margin: "4px";
 }
 
 #formulario {
@@ -23,6 +24,8 @@ header {
 
 }
 
+footer{color: aquamarine;}
+
 body{
   background-color: darkorange;
 }
@@ -33,4 +36,6 @@ body{
   border-style: solid;
   border-width: 1px;
   margin: 3px;
+  
 }
+
