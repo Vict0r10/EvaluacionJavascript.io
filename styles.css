@@ -1,0 +1,28 @@
+header {
+  font-family: "Courier New", Courier, monospace;
+  color: chocolate;
+}
+
+#formulario {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-family: "Courier New", Courier, monospace;
+    background-color: lightgray;
+}
+#calcular{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border-color: grey;
+    border-style: dashed;
+    border-width: 1px;
+    width: fit-content;
+    background-color: brown;
+
+
+}
+
+#resultado{
+    
+}
