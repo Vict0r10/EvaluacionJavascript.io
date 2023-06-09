@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pagina web</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" async defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Pagina web</h1>
+    </header>
+
+    <form id="formulario">
+      <fieldset>
+        <legend style="color: darkslateblue">Formulario</legend>
+
+        <table>
+          <tr>
+            <td><label for="n1">Nombre de la primera persona</label></td>
+            <td><input type="text" id="n1" /> <br /></td>
+          </tr>
+
+          <tr>
+            <td><label for="e1">Edad de la primera persona</label></td>
+            <td><input type="text" id="e1" /> <br /></td>
+          </tr>
+          <tr>
+            <td><label for="n2">Nombre de la segunda persona</label></td>
+            <td><input type="text" id="n2" /> <br /></td>
+            <br />
+          </tr>
+          <tr>
+            <td><label for="e2">Edad de la segunda persona</label></td>
+            <td><input type="text" id="e2" /> <br /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+
+    <div id="calcular">
+      <button onclick="acc1()">Calcula</button><button onclick="limpiar()">Limpiar campos</button><br>
+    <p>
+        <b> La suma de las edades es: <b>
+            <div id="resultado"></div>
+      
+    </p>
+    </div>
+  </body>
+</html>
